@@ -35,6 +35,7 @@ void f3(int* arr1, int* arr2) {
 
 int main()
 {
+	setlocale(LC_ALL, " ");
 	//задание 1
 	/*
 	int arr1[5] = { 6,8,3,4,5};
@@ -66,6 +67,21 @@ int main()
 	else cout << *pb;
 	*/
 	//задание 5
+	/*
+	int a;
+	cin >> a;
+	int* pa;
+	pa = &a;
+	if (*pa > 0) cout << "Chislo pologitelnoe";  //какие-то проблемы с русским языком не помогают никакие "добавки" пишет иероглифы
+	else cout << "Chislo otricatelnoe";
+	*/
+	//задание 6
+	int a = 1, b = 2;
+	int* pa;
+	int* pb;
+	pa = &a;
+	pb = &b;
+
 
 }
 
