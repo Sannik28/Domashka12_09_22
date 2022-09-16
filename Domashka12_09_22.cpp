@@ -30,7 +30,23 @@ void f3(int* arr1, int* arr2) {
 		cout << *(arr2 + i) << endl;
 	}
 }
-
+void shet(int* a, int* b, int* f) {
+	int n =*f;
+	switch (n) {
+	case 1: {
+		cout << *a + *b; }
+		  break;
+	case 2: {
+		cout << *a - *b; }
+		  break;
+	case 3: {
+		cout << *a * *b; }
+		  break;
+	case 4: {
+		cout << *a / *b; }
+		  break;
+	}
+}
 
 
 int main()
@@ -75,15 +91,39 @@ int main()
 	if (*pa > 0) cout << "Chislo pologitelnoe";  //какие-то проблемы с русским языком не помогают никакие "добавки" пишет иероглифы
 	else cout << "Chislo otricatelnoe";
 	*/
+	
+	/*
 	//задание 6
-	int a = 1, b = 2;
+	int a = 1, b = 2,c;
 	int* pa;
 	int* pb;
 	pa = &a;
 	pb = &b;
+	c = *pb;
+	*pb = *pa;
+	*pa = c;
+	cout << a << " " << b;
+	*/
+	/*
+	//Задание 7
+		int a, b, с;
+		cout << "Введите число 1";
+		cin >> a;
+		cout << "Введите число 2";
+		cin >> b;
+		cout << "Выберите действие:\n";
+		cout << "+ нажмите 1\n";
+		cout << "- нажмите 2\n";
+		cout << "* нажмите 3\n";
+		cout << "/ нажмите 4\n";
+		cin >> с;
+		shet(&a, &b, &с);
+		*/
+
+	}
 
 
-}
+
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
