@@ -48,6 +48,15 @@ void shet(int* a, int* b, int* f) {
 	}
 }
 
+	void sumArray(int* arr, int s) {
+		int sum = 0;
+		for (int i = 0; i < s; i++) {
+			sum += *(arr + i);
+		}
+		cout << sum;
+
+}
+
 
 int main()
 {
@@ -119,7 +128,10 @@ int main()
 		cin >> с;
 		shet(&a, &b, &с);
 		*/
+//Задание 8
 
+		int arr[5] = { 1,2,3,4,5 };
+		sumArray(arr, 5);
 	}
 
 
